@@ -247,10 +247,7 @@
         "nombre": "Metadatos del documento",
         "id": 2
       },
-      {
-        "nombre": "Scripting",
-        "id": 3
-      },
+      
       {
         "nombre": "Secciones",
         "id": 4
@@ -265,26 +262,7 @@
         "nombre": "Semántica a nivel de Texto",
         "id": 6
       }
-      ,
-      {
-        "nombre": "Ediciones",
-        "id": 7
-      }
-      ,
-      {
-        "nombre": "Contenido incrustado",
-        "id": 8
-      }
-      ,
-      {
-        "nombre": "Datos tabulares",
-        "id": 9
-      }
-      ,
-      {
-        "nombre": "Formularios",
-        "id": 10
-      }
+  
       
     ]
   }
