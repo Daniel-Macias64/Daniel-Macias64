@@ -1,0 +1,906 @@
+{
+    
+  
+
+  "app": [
+    {
+      "version": "1.0.0"
+    }
+
+  ],
+    
+  "etiquetas": [
+      {
+        "id": 1,
+        "nombre": "doctype",
+        "tipo": "Elemento raíz",
+        "Descripcion":"Define que el documento esta bajo el estandar de HTML 5",
+        "urlToImage":"https://s3-us-west-2.amazonaws.com/devcodepro/media/tutorials/doctype-que-es-y-para-que-sirve-t1.png"
+      },
+      {
+        "id": 2,
+        "nombre": "head",
+        "tipo": "Elemento raíz",
+        "Descripcion": "Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.",
+        "urlToImage":"https://www.computerhope.com/jargon/h/head.gif"
+      },
+      {
+        "id": 3,
+        "nombre": "html",
+        "tipo": "Elemento raíz",
+        "Descripcion": "Representa la raíz de un documento HTML o XHTML. Todos los demás elementos deben ser descendientes de este elemento.",
+        "urlToImage":"https://polotecnologico.net/capacitaciones/wp-content/uploads/sites/2/2019/03/html.jpg"
+      },
+      {
+        "id": 4,
+        "nombre": "title",
+        "tipo": "Metadatos del documento",
+        "Descripcion": "Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.",
+        "urlToImage":"https://www.computerhope.com/jargon/h/title.gif"
+      },
+      {
+        "id": 5,
+        "nombre": "base",
+        "tipo": "Metadatos del documento",
+        "Desripcion": "Define la URL base para las URLs relativas en la página.",
+        "urlToImage":"https://perishablepress.com/wp/wp-content/images/2017/html-base-tag.gif"
+      },
+      {
+        "id": 6,
+        "nombre": "link",
+        "tipo": "Metadatos del documento",
+        "Descripcion": "Usada para enlazar JavaScript y CSS externos con el documento HTML actual",
+        "urlToImage":"https://www.computerhope.com/jargon/h/link.gif"
+      },
+      {
+        "id": 7,
+        "nombre": "meta",
+        "tipo": "Metadatos del documento",
+        "Descripcion": "Define los metadatos que no pueden ser definidos usando otro elemento HTML.",
+        "urlToImage":"https://lh3.googleusercontent.com/proxy/GNPZnRkWiwKBtnOqUHy6v45bSk8gBPfFd4dVavL82969WLVxBpyojOobI8BYBrRqggSYoeE5qthTjtwou7e635AQs6CR1Opf6p4hK1AiK1gFBPU8hOS3mLsNnj5JfbpH"
+      }
+      ,
+      {
+        "id": 8,
+        "nombre": "style",
+        "tipo": "Metadatos del documento",
+        "Descripcion": "Etiqueta de estilo usada para escribir CSS en línea.",
+        "urlToImage":"https://res.cloudinary.com/teepublic/image/private/s--lecoF6Vx--/t_Preview/t_Watermark/b_rgb:191919,c_lpad,f_jpg,h_630,q_90,w_1200/v1554872856/production/designs/4608368_0.jpg"
+      }
+      ,
+      {
+        "id": 9,
+        "nombre": "script",
+        "tipo": "Scripting",
+        "Descripcion": "Define ya sea un script interno o un enlace hacia un script externo. El lenguaje de programación es JavaScript",
+        "urlToImage":"https://lh3.googleusercontent.com/proxy/7wzg0cKtor1MRk5B_944P5sNwb0IUYNW4EWz3x_nUhff5mR8u_oKZSbv1bl11o4D6uOBeW_0Z-DZyEGYIldaFgW9yYKd0vzsnIL1DTAYSiP0iro4"
+      }
+      ,
+      {
+        "id": 10,
+        "nombre": "noscript",
+        "tipo": "Scripting",
+        "Descripcion": "Define un contenido alternativo a mostrar cuando el navegador no soporta scripting.",
+        "urlToImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSfMLEN51EtwuUcbgFOggMOrOpN29zt0a1xWGGNKngDl873rIx3"
+      }
+      ,
+      {
+        "id": 11,
+        "nombre": "body",
+        "tipo": "Secciones",
+        "Descripcion": "Representa el contenido principal de un documento HTML. Solo hay un elemento <body> en un documento.",
+        "urlToImage":"data:image/png;base64,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"
+      }
+      ,
+      {
+        "id": 12,
+        "nombre": "section",
+        "tipo": "Secciones",
+        "Descripcion": "Define una sección en un documento.",
+        "urlToImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSYskckvkjj_M_geaHycPFs2vlyIbrlnfiLGkMLt9FZIJzCg72X"
+      }
+      ,
+      {
+        "id": 13,
+        "nombre": "nav",
+        "tipo": "Secciones",
+        "Descripcion": "Define una sección que solamente contiene enlaces de navegación.",
+        "urlToImage":"https://cdn.educba.com/academy/wp-content/uploads/2020/02/HTML-nav-Tag.jpg"
+      }
+      ,
+      {
+        "id": 14,
+        "nombre": "article",
+        "tipo": "Secciones",
+        "Descripcion": "Define contenido autónomo que podría existir independientemente del resto del contenido.",
+        "urlToImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIBignwqi9GDQHo1V8Vmk7FIXlRrcMgr_EmQMJjjP7pPlAH8-H"
+      }
+      ,
+      {
+        "id": 15,
+        "nombre": "aside",
+        "tipo": "Secciones",
+        "Descripcion": "Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido.",
+        "urlToImage":"https://www.computerhope.com/jargon/h/aside.gif"
+      }
+      ,
+      {
+        "id": 16,
+        "nombre": "h1,h2,h3,h4,h5,h6",
+        "tipo": "Secciones",
+        "Descripcion": "Los elemento de cabecera  implementan seis niveles de cabeceras de documentos; <h1> es la de mayor y <h6> es la de menor importancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.",
+        "urlToImage":"https://lh3.googleusercontent.com/proxy/c42PdJkCxroJuMf0YLwNR57_eYvx1Itj3oQuR6OMIjnfCXdM8wlC2IY32fvbIscyQ17CAAu3bh7B1veqwwaVB-iqYkmJsQPpCP0rsZeXFE339HCyeoaGeCK0T8dlD4-tKi-VG_-K9uhH"
+      }
+      ,
+      {
+        "id": 17,
+        "nombre": "header",
+        "tipo": "Secciones",
+        "Descripcion": "Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.",
+        "urlToImage":"https://www.codingtag.com/uploads/1562405887.png"
+      }
+      ,
+      {
+        "id": 18,
+        "nombre": "footer",
+        "tipo": "Secciones",
+        "Descripcion": "Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.",
+        "urlToImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8jQaw5DKbwSOVS4y_WQ-qY1nI4jZS4y8U3A7_2MVqM8zo-IFL"
+      }
+      ,
+      {
+        "id": 19,
+        "nombre": "address",
+        "tipo": "Secciones",
+        "Descripcion": "Define una sección que contiene información de contacto.",
+        "urlToImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTa7mShjfqDDUM_89GkYzRE2C9z99qiYpP0yMhB_LOSWMrxXC0r"
+      }
+      ,
+      {
+        "id": 20,
+        "nombre": "main",
+        "tipo": "Secciones",
+        "Descripcion": "Define el contenido principal o importante en el documento. Solamente existe un elemento <main> en el documento.",
+        "urlToImage":"https://www.computerhope.com/jargon/h/main.gif"
+      }
+      ,
+      {
+        "id": 21,
+        "nombre": "p",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Define una parte que debe mostrarse como un párrafo.",
+        "urlToImage":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAABkCAMAAAAL3/3yAAAAM1BMVEX///8DeeJCm+nA3fjv9/0jiuYTgeSgzfTf7vtiq+2BvPHQ5vqQxPKw1fZSo+tytO8ykucdPZiaAAAEYklEQVR4nO2c24KrIAxFi5fWqrX9/689I50OUUIIogg9Wa9V0E3YhlsvF0EQBEEQBEEQBCGC5tbWR5Z/fXZHFp+Srr8qdahYSqn7oRWkYrirmaPFUqq6HVlFCh6VUonEUqodmyNrOZYfq1Jqi1jNo58qzdTXDAH+ainWvLRV+cQa6g9/mjTjSy2YHr6q4NUlmtevVfnEqtYXdKv73v3LI9fy6tLM61Gt35cnFiqVji6yM1rilmNe0KrCxFp03CXXgagRubwM8+rQN64czw7FGl7IjSy17liV+ZvX2qp+n9vZzECskZLKo1YzIsGcuXnZVvVD2xMGYm4gw+pdEGlEN7TuXM0LtSpf62Jv6GSiHwCN6izNC7eqO2XLMw6xWp2RWuL7Eq6mx9orN/PCG7X3Nyoi1vX++PSdZtW36I6ouWHdOSfzQq3qxXpA6871e9WLWOkZRdZoWpuHeeFWxQ39lViVfVszwahjFYpaQgbmFftcC7EcoxqoFrc/RbXgMaBW1d4CIh6K9XTc14AX93wQAfVkPdmZ5oVaFdKRKEwRxMRzDcoPaIjuiUT9KeaFWtXVnao7sGYdPFex++H7IbHEPrl5oVa1pdF4YoHQ4vfDN2j4pzQv1Koq7xQdBk+siwkQ3vcQ0mHD7FTmhbeVL1V3wBTraWra0IfQxD6BeaFWRQ6VaZhigX64KYDRYfbB5oVaVVREM8UC03ucJB4D9Y7pQPNCqov0Sq5YZsR331xXgzX1uLk4H1YgM4bKNFyxTFhUMdXZw+ytgepnWU+7wxeFK1a/j1j2MDuRWLtUwxULzDnHVlnv/xYo50UWeMO4Ck+KLJXSs3YS6zzP0iT6Gu4hVuKv4Xl5VrxYyfOs0zL4aLFOyOA1Z4wN48Q6a2yoST/rECPWqbMO+gHSzmdFiHX6fNZM0pnSrRl8HjOlmn3n4PcXK585eM2eqzu0WOY6bhaZ2erOzH7rhrRYphbe62a4bjiz14o0eUNnSmbkKLmuSGt22etAinUz5XqLzHmvg2aHXTSkWMZ/fEth2e+imYnen0WJBXohOfAtY3/WTOTOP+qNTOJArYSVs/NPE7OnlBCrMUHrzrLK2lOqidit7C4UZEyOOC1xt/LM9n3wLsCnsMWvKHQf/Mz2ExYoA1DCYe92dflalc3WszsIUCtHYJV8dkcTfCrMMQJfnLtwTZktq8rfqmxY5w1hBLaj1XXqRYQ6E1J4URlWZcM4ybrqri94cHVYndK8OvuWuaQgq7LxnZHG1hHeB37tX9yjgb/QLMuqbOjT9wFndwgn0r+XaFU21P868MWipFDlWpWN+x9D2GKRYVO2VbFhitVuXJb8LkCeRWhFHyf/bwAZvPPkfeCC0feyGO5Yf3+ho0qk+rAeG3bjBEbh7RSyrPb1oAPpYf2PK4KGu24oXESsIESsAESsAESsAESsAESsAESsAESsAESsAESsAESsAESsAESsAESsAESsAESsAESsAEQsQRAE4Wz+Ab+PIgioWTfJAAAAAElFTkSuQmCC"
+      }
+      ,
+      {
+        "id": 22,
+        "nombre": "hr",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Representa un quiebre temático entre párrafos de una sección o articulo o cualquier contenido.",
+        "urlToImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT417WBmnlroXq-m5g1kk3mtcv-0wMj4Vqj6z0PDKYiOltiN2HQ"
+      }
+      ,
+      {
+        "id": 23,
+        "nombre": "pre",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Indica que su contenido esta preformateado y que este formato debe ser preservado.",
+        "urlToImage":"https://www.computerhope.com/jargon/h/pre.gif"
+      }
+      ,
+      {
+        "id": 24,
+        "nombre": "blockquote",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Representa un contenido citado desde otra fuente.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/blockquote.gif"
+      }
+      ,
+      {
+        "id": 25,
+        "nombre": "ol",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Define una lista ordenada de artículos.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/ol.gif"
+      }
+      ,
+      {
+        "id": 26,
+        "nombre": "ul",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Define una lista de artículos sin orden.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/ul.gif"
+      }
+      ,
+      {
+        "id": 27,
+        "nombre": "li",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Define un artículo de una lista enumerada.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/li.gif"
+      }
+      ,
+      {
+        "id": 28,
+        "nombre": "dl",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Define una lista de definiciones, es decir, una lista de términos y sus definiciones asociadas.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/dl.gif"
+      }
+      ,
+      {
+        "id": 29,
+        "nombre": "dt",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Representa un término definido por el siguiente <dd>.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/dt.gif"
+      }
+      ,
+      {
+        "id": 30,
+        "nombre": "dd",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Representa la definición de los términos listados antes que él.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/dd.gif"
+      }
+      ,
+      {
+        "id": 31,
+        "nombre": "figure",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Representa una figura ilustrada como parte del documento.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/figure.gif"
+      }
+      ,
+      {
+        "id": 32,
+        "nombre": "figcaption",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Representa la leyenda de una figura.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/figcaption.gif"
+      }
+      ,
+      {
+        "id": 33,
+        "nombre": "div",
+        "tipo": "Agrupación de Contenido",
+        "Descripcion": "Representa un contenedor genérico sin ningún significado especial.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/div.gif"
+      }
+      ,
+      {
+        "id": 34,
+        "nombre": "a",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un hiperenlace, enlazando a otro recurso.",
+        "urlToImage": "https://www.webdevelopersnotes.com/wp-content/uploads/html-links-target-attribute-of-anchor-tag.png"
+      }
+      ,
+      {
+        "id": 35,
+        "nombre": "em",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un texto enfatizado, como un acento de intensidad.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/em.gif"
+      },
+      {
+        "id": 36,
+        "nombre": "strong",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un texto especialmente importante.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/strong.gif"
+      }
+      ,
+      {
+        "id": 37,
+        "nombre": "small",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un comentario aparte, es decir, textos como un descargo de responsabilidad o una nota de derechos de autoría, que no son esenciales para la comprensión del documento.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/small.gif"
+      }
+      ,
+      {
+        "id": 38,
+        "nombre": "s",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa contenido que ya no es exacto o relevante.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/s.gif"
+      }
+      ,
+      {
+        "id": 39,
+        "nombre": "cite",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa el título de una obra.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/cite.gif"
+      }
+      
+      ,
+      {
+        "id": 40,
+        "nombre": "q",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa una cita textual inline.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/q.gif"
+      }
+      ,
+      {
+        "id": 41,
+        "nombre": "dfn",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un término cuya definición  está contenida en su contenido ancestro más próximo.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/dfn.gif"
+      }
+      ,
+      {
+        "id": 42,
+        "nombre": "abbr",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa una abreviación o un acrónimo ; la expansión de la abreviatura puede ser representada por el atributo title.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/abbr.gif"
+      }
+      
+      ,
+      {
+        "id": 43,
+        "nombre": "data",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Asocia un equivalente legible por máquina a sus contenidos. (Este elemento está sólamente en la versión de la WHATWG del estandar HTML, y no en la versión de la W3C de HTML5).",
+        "urlToImage": "data:image/png;base64,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"
+      }
+      ,
+      {
+        "id": 44,
+        "nombre": "time",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un valor de fecha y hora; el equivalente legible por máquina puede ser representado en el atributo datetime.",
+        "urlToImage": "https://www.apacara.com/static/html/16x9/html-time-tag.jpg"
+      }
+      ,
+      {
+        "id": 45,
+        "nombre": "code",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un código de ordenador.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/code.gif"
+      }
+      ,
+      {
+        "id": 46,
+        "nombre": "var",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa a una variable, es decir, una expresión matemática o contexto de programación, un identificador que represente a una constante, un símbolo que identifica una cantidad física, un parámetro de una función o un marcador de posición en prosa.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/var.gif"
+      }
+      ,
+      {
+        "id": 47,
+        "nombre": "samp",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa la salida de un programa o un ordenador.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/samp.gif"
+      },
+      {
+        "id": 48,
+        "nombre": "kbd",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa la entrada de usuario, por lo general desde un teclado, pero no necesariamente, este puede representar otras formas de entrada de usuario, como comandos de voz transcritos.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/kbd.gif"
+      }
+      ,
+      {
+        "id": 49,
+        "nombre": "sub,sup",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representan un subíndice y un superíndice, respectivamente.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/sup.gif"
+      }
+      ,
+      {
+        "id": 50,
+        "nombre": "i",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un texto en una voz o estado de ánimo alterno, o por lo menos de diferente calidad, como una designación taxonómica, un término técnico, una frase idiomática, un pensamiento o el nombre de un barco.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/i.gif"
+      }
+      ,
+     
+      {
+        "id": 52,
+        "nombre": "u",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa una anotación no textual sin-articular, como etiquetar un texto como mal escrito o etiquetar un nombre propio en texto en chino.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/u.gif"
+      
+      }
+      ,
+      {
+        "id": 53,
+        "nombre": "mark",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa texto resaltado con propósitos de referencia, es decir por su relevancia en otro contexto.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/mark.gif"
+      }
+      ,
+      {
+        "id": 54,
+        "nombre": "ruby",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa contenidos a ser marcados con anotaciones ruby, recorridos cortos de texto presentados junto al texto. Estos son utilizados con regularidad en conjunto a lenguajes de Asia del Este, donde las anotaciones actúan como una guía para la pronunciación, como el furigana japonés.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/ruby.gif"
+      }
+      ,
+      {
+        "id": 55,
+        "nombre": "rt",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa el texto de una anotación ruby.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/rt.gif"
+      }
+      ,
+      {
+        "id": 56,
+        "nombre": "rp",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa los paréntesis alrededor de una anotación ruby, usada para mostrar la anotación de manera alterna por los navegadores que no soporten despliegue estandar para las anotaciones.",
+        "urlToImage": "https://www.techhoney.com/wp-content/uploads/2013/08/HTML-Rp-Tag.jpg"
+      }
+      ,
+      {
+        "id": 57,
+        "nombre": "bdi",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un texto que debe ser aislado de sus alrededores para el formateado bidireccional del texto.  Permite incrustar un fragmento de texto con una direccionalidad diferente o desconocida.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/bdi.gif"
+      }
+      ,
+      {
+        "id": 58,
+        "nombre": "bdo",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa la direccionalidad de sus descendientes con el fin de anular de forma explícita al algoritmo bidireccional Unicode.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/bdo.gif"
+      }
+      ,
+      {
+        "id": 59,
+        "nombre": "span",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa texto sin un significado específico.  Este debe ser usado cuando ningún otro elemento semántico le confiere un significado adecuado, en cuyo caso, provendrá de atributos globales como class, lang, o dir.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/span.gif"
+      }
+      ,
+      {
+        "id": 60,
+        "nombre": "br",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa un salto de línea.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/br.gif"
+      }
+      ,
+      {
+        "id": 61,
+        "nombre": "wbr",
+        "tipo": "Semántica a nivel de Texto",
+        "Descripcion": "Representa una oportunidad de salto de línea, es decir, un punto sugerido de envoltura donde el texto de múltiples líneas puede ser dividido para mejorar su legibilidad.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/wbr.gif"
+      
+      }
+      ,
+      {
+        "id": 62,
+        "nombre": "ins",
+        "tipo": "Ediciones",
+        "Descripcion": "Define una adición en el documento.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/ins.gif"
+      
+      }
+      ,
+      {
+        "id": 63,
+        "nombre": "del",
+        "tipo": "Ediciones",
+        "Descripcion": "Define una remoción del documento.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQrEvMXAeMZRyKlxU6DGILCoNw9TeDcmIiIn_W_Hgu7jynzbY3t"
+      }
+      ,
+      {
+        "id": 64,
+        "nombre": "img",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Representa una imagen.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRiA0G6DOZ9Gb6OtdQ9MelKrododBLGgfU2zxdqouD10RlFlX4n"
+      }
+      ,
+      {
+        "id": 65,
+        "nombre": "iframe",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Representa un contexto anidado de navegación, es decir, un documento HTML embebido.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/iframe.gif"
+      }
+      ,
+      {
+        "id": 66,
+        "nombre": "embed",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Representa un punto de integración para una aplicación o contenido interactivo externo que por lo general no es HTML.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/embed.gif"
+      }
+      ,
+      {
+        "id": 67,
+        "nombre": "object",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Representa un recurso externo, que será tratado como una imagen, un sub-documento HTML o un recurso externo a ser procesado por un plugin.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/object.gif"
+      }
+      ,
+      {
+        "id": 68,
+        "nombre": "param",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Define parámetros para el uso por los plugins invocados por los elementos <object>.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/param.gif"
+      }
+      ,
+      {
+        "id": 69,
+        "nombre": "video",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Representa un video, y sus archivos de audio y capciones asociadas, con la interfaz necesaria para reproducirlos. ",
+        "urlToImage": "https://miro.medium.com/max/2560/1*UR11erHpjNq4LJBYB3q2qw.jpeg"
+      }
+      ,
+      {
+        "id": 70,
+        "nombre": "audio",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Representa un sonido o stream de audio.",
+        "urlToImage": "data:image/jpeg;base64,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"
+      }
+      ,
+      {
+        "id": 71,
+        "nombre": "source",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Permite a autores especificar recursos multimedia alternativos para los elementos multimedia como <video> o <audio>.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/source.gif"
+      }
+      ,
+      {
+        "id": 72,
+        "nombre": "track",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Permite a autores especificar una pista de texto temporizado para elementos multimedia como <video> o <audio>.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/track.gif"
+      }
+      ,
+      {
+        "id": 73,
+        "nombre": "canvas",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Representa un área de mapa de bits  en el que se pueden utilizar scripts para renderizar gráficos como gráficas, gráficas de juegos o cualquier imagen visual al vuelo.",
+        "urlToImage": "https://www.webfx.com/blog/images/assets/images.sixrevisions.com/2010/10/03-01_html5_canvas_element_ld_img.png"
+      }
+      ,
+      {
+        "id": 74,
+        "nombre": "map",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "En conjunto con <area>, define un mapa de imagen.",
+        "urlToImage": "https://www.w3docs.com/uploads/media/book_gallery/0001/04/229737620c22e4bd5b12b13f5ff159fe0c643efc.png"
+      }
+      ,
+      {
+        "id": 75,
+        "nombre": "area",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "En conjunto con <map>, define un mapa de imagen.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/area.gif"
+      }
+      ,
+      {
+        "id": 76,
+        "nombre": "svg",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Define una imagen vectorial embebida.",
+        "urlToImage": "https://dnnconsulting.net/DesktopModules/Blog/BlogImage.ashx?TabId=95&ModuleId=467&Blog=1&Post=1339&w=400&h=300&c=1&key=6da793b4-0ab7-4c86-ad14-35224c2c4bae"
+      }
+      ,
+      {
+        "id": 77,
+        "nombre": "math",
+        "tipo": "Contenido incrustado",
+        "Descripcion": "Define una fórmula matemática.",
+        "urlToImage": "https://media.geeksforgeeks.org/wp-content/uploads/20191104170940/math.png"
+      }
+      ,
+      {
+        "id": 78,
+        "nombre": "table",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa datos con más de una dimensión.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/table.gif"
+      }
+      ,
+      {
+        "id": 79,
+        "nombre": "caption",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa el título de una tabla.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/caption.gif"
+      }
+      ,
+      {
+        "id": 80,
+        "nombre": "colgroup",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa un conjunto de una o más columnas de una tabla.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/colgroup.gif"
+      }
+      ,
+      {
+        "id": 81,
+        "nombre": "col",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa una columna de una tabla.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/col.gif"
+      }
+      ,
+      {
+        "id": 82,
+        "nombre": "tbody",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa el bloque de filas que describen los datos concretos de una tabla.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/tbody.gif"
+      }
+      ,
+      {
+        "id": 83,
+        "nombre": "thead",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa el bloque de filas que describen las etiquetas de columna de una tabla.",
+        "urlToImage": "https://www.apacara.com/static/html/16x9/html-thead-tag.webp"
+      }
+      ,
+      {
+        "id": 84,
+        "nombre": "tfoot",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa los bloques de filas que describen los resúmenes de columna de una tabla.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/tfoot.gif"
+      }
+      ,
+      {
+        "id": 85,
+        "nombre": "tr",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa una fila de celdas en una tabla.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/tr.gif"
+      }
+      ,
+      {
+        "id": 86,
+        "nombre": "td",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa una celda de datos en una tabla.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/td.gif"
+      }
+      ,
+      {
+        "id": 87,
+        "nombre": "th",
+        "tipo": "Datos tabulares",
+        "Descripcion": "Representa una celda encabezado en una tabla. ",
+        "urlToImage": "https://www.computerhope.com/jargon/h/th.gif"
+      }
+      ,
+      {
+        "id": 88,
+        "nombre": "form",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un formulario, consistiendo de controles que puede ser enviado a un servidor para procesamiento.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/form.gif"
+      }
+      ,
+      {
+        "id": 89,
+        "nombre": "fieldset",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un conjunto de controles.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIp7pVo9rNS6rwmKKkytTvtdBDOjXQFY1c1hVvZ-i2Kb0Tyymi"
+      }
+      ,
+      {
+        "id": 90,
+        "nombre": "legend",
+        "tipo": "Formularios",
+        "Descripcion": "Representa el título de un <fieldset>.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/legend.gif"
+      }
+      ,
+      {
+        "id": 91,
+        "nombre": "label",
+        "tipo": "Formularios",
+        "Descripcion": "Representa el título de un control de formulario.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/label.gif"
+      }
+      ,
+      {
+        "id": 92,
+        "nombre": "input",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un campo de datos escrito que permite al usuario editar los datos.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/input.gif"
+      }
+      ,
+      {
+        "id": 93,
+        "nombre": "button",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un botón.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/button.gif"
+      }
+      ,
+      {
+        "id": 94,
+        "nombre": "select",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un control que permite la selección entre un conjunto de opciones.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/select.gif"
+      }
+      ,
+      {
+        "id": 95,
+        "nombre": "datalist",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un conjunto de opciones predefinidas para otros controles.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwwyI70HHY5dzXqK9e1613H0RJkzxHqiVzvM9oHFmqd89waPKf"
+      }
+      ,
+      {
+        "id": 96,
+        "nombre": "optgroup",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un conjunto de opciones, agrupadas lógicamente.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSxkzySE4qBcylARj68XjIbNimqPIWBAbfaPC0Fg7va2jrsHleU"
+      }
+      ,
+      {
+        "id": 97,
+        "nombre": "option",
+        "tipo": "Formularios",
+        "Descripcion": "Representa una opción en un elemento <select>, o una sugerencia de un elemento <datalist>.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKJWu7MNCdXQvpVD0DAsulPfMcqct_pRw9vpdu6-av9PKHpKl2"
+      }
+      ,
+      {
+        "id": 98,
+        "nombre": "textarea",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un control de edición de texto multilínea.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTuY3UpZ00rnf9i5BKuifHPpvunpHv4piTaQuW4AGwEDRv4RTsi"
+      }
+      ,
+      {
+        "id": 99,
+        "nombre": "keygen",
+        "tipo": "Formularios",
+        "Descripcion": "Representa un control de par generador de llaves.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/keygen.gif"
+      }
+      ,
+      {
+        "id": 100,
+        "nombre": "output",
+        "tipo": "Formularios",
+        "Descripcion": "Representa el resultado de un cálculo.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/output.gif"
+      }
+      ,
+      {
+        "id": 101,
+        "nombre": "progress",
+        "tipo": "Formularios",
+        "Descripcion": "Representa el progreso de finalización de una tarea.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/progress.gif"
+      }
+      ,
+      {
+        "id": 102,
+        "nombre": "meter",
+        "tipo": "Formularios",
+        "Descripcion": "Representa la medida escalar (o el valor fraccionario) dentro de un rango conocido.",
+        "urlToImage": "https://www.computerhope.com/jargon/h/meter.gif"
+      }
+      ,
+      {
+        "id": 103,
+        "nombre": "details",
+        "tipo": "Elementos interactivos",
+        "Descripcion": "Representa un widget desde el que un usuario puede obtener información o controles adicionales.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQsXcLyY9TBWct1pOIvR0WRcWogRJ0sfuw5pm77-dSOCsZnkwh5"
+      }
+      ,
+      {
+        "id": 104,
+        "nombre": "summary",
+        "tipo": "Elementos interactivos",
+        "Descripcion": "Representa un resumen, título o leyenda para un elemento <details> dado.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqyvYGGck5cSMfvFOrzWEm1H9keXo6MkIJPg92S3SsAnJeWo9N"
+      
+      }
+      ,
+      {
+        "id": 105,
+        "nombre": "command",
+        "tipo": "Elementos interactivos",
+        "Descripcion": "Representa un comando que un usuario puede invocar.",
+        "urlToImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcROeXVtXtY8s2x3vTF01DYGSP91s0h-3E4zMAmdDyHejDzfXSGc"
+      }
+      ,
+      {
+        "id": 106,
+        "nombre": "menu",
+        "tipo": "Elementos interactivos",
+        "Descripcion": "Representa una lista de comandos .",
+        "urlToImage": "https://www.wikitechy.com/step-by-step-html-tutorials/img/share/menu-item-tag-in-html.png"
+      }
+    ],
+    "clasificaciones": [
+      {
+        "nombre": "Elemento raíz",
+        "id": 1
+      },
+      {
+        "nombre": "Metadatos del documento",
+        "id": 2
+      },
+      {
+        "nombre": "Scripting",
+        "id": 3
+      },
+      {
+        "nombre": "Secciones",
+        "id": 4
+      }
+      ,
+      {
+        "nombre": "Agrupación de Contenido",
+        "id": 5
+      }
+      ,
+      {
+        "nombre": "Semántica a nivel de Texto",
+        "id": 6
+      }
+      ,
+      {
+        "nombre": "Ediciones",
+        "id": 7
+      }
+      ,
+      {
+        "nombre": "Contenido incrustado",
+        "id": 8
+      }
+      ,
+      {
+        "nombre": "Datos tabulares",
+        "id": 9
+      }
+      ,
+      {
+        "nombre": "Formularios",
+        "id": 10
+      }
+      ,
+      {
+        "nombre": "Elementos interactivos",
+        "id": 11
+      }
+      
+    ]
+  }
